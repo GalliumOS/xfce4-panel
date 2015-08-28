@@ -1,0 +1,7 @@
+rm_conffile /etc/xdg/xfce4/panel/clock-14.rc 4.7.0
+rm_conffile /etc/xdg/xfce4/panel/launcher-10.rc 4.7.0
+rm_conffile /etc/xdg/xfce4/panel/launcher-7.rc 4.7.0
+rm_conffile /etc/xdg/xfce4/panel/launcher-9.rc 4.7.0
+rm_conffile /etc/xdg/xfce4/panel/panels.xml 4.7.0
+rm_conffile /etc/xdg/xfce4/panel/systray-4.rc 4.7.0
+rm_conffile /etc/xdg/xfce4/panel/xfce4-menu-5.rc 4.7.0

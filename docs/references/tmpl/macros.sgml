@@ -1,0 +1,100 @@
+<!-- ##### SECTION Title ##### -->
+macros
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO XFCE_PANEL_CHANNEL_NAME ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO panel_slice_alloc ##### -->
+<para>
+
+</para>
+
+@block_size: 
+
+
+<!-- ##### MACRO panel_slice_alloc0 ##### -->
+<para>
+
+</para>
+
+@block_size: 
+
+
+<!-- ##### MACRO panel_slice_free ##### -->
+<para>
+
+</para>
+
+@type: 
+@ptr: 
+
+
+<!-- ##### MACRO panel_slice_free1 ##### -->
+<para>
+
+</para>
+
+@block_size: 
+@mem_block: 
+
+
+<!-- ##### MACRO panel_slice_new ##### -->
+<para>
+
+</para>
+
+@type: 
+
+
+<!-- ##### MACRO panel_slice_new0 ##### -->
+<para>
+
+</para>
+
+@type: 
+
+
+<!-- ##### MACRO PANEL_PARAM_READABLE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO PANEL_PARAM_READWRITE ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO PANEL_PARAM_WRITABLE ##### -->
+<para>
+
+</para>
+
+
+

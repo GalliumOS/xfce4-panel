@@ -1,0 +1,66 @@
+<!-- ##### SECTION Title ##### -->
+register-gobject-plugins
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### TYPEDEF XfcePanelTypeModule ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO XFCE_PANEL_DEFINE_PLUGIN ##### -->
+<para>
+
+</para>
+
+@TypeName: 
+@type_name: 
+@...: 
+
+
+<!-- ##### MACRO XFCE_PANEL_DEFINE_PLUGIN_RESIDENT ##### -->
+<para>
+
+</para>
+
+@TypeName: 
+@type_name: 
+@...: 
+
+
+<!-- ##### MACRO XFCE_PANEL_DEFINE_TYPE ##### -->
+<para>
+
+</para>
+
+@TypeName: 
+@type_name: 
+@TYPE_PARENT: 
+
+
+<!-- ##### MACRO XFCE_PANEL_DEFINE_PREINIT_FUNC ##### -->
+<para>
+
+</para>
+
+@preinit_func: 
+
+

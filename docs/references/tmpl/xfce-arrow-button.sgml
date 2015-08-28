@@ -1,0 +1,86 @@
+<!-- ##### SECTION Title ##### -->
+xfce-arrow-button
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT XfceArrowButton ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL XfceArrowButton::arrow-type-changed ##### -->
+<para>
+
+</para>
+
+@xfcearrowbutton: the object which received the signal.
+@arg1: 
+
+<!-- ##### ARG XfceArrowButton:arrow-type ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION xfce_arrow_button_new ##### -->
+<para>
+
+</para>
+
+@arrow_type: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_arrow_button_get_arrow_type ##### -->
+<para>
+
+</para>
+
+@button: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_arrow_button_set_arrow_type ##### -->
+<para>
+
+</para>
+
+@button: 
+@arrow_type: 
+
+
+<!-- ##### FUNCTION xfce_arrow_button_get_blinking ##### -->
+<para>
+
+</para>
+
+@button: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_arrow_button_set_blinking ##### -->
+<para>
+
+</para>
+
+@button: 
+@blinking: 
+
+

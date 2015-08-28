@@ -1,0 +1,93 @@
+<!-- ##### SECTION Title ##### -->
+convenience
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### FUNCTION xfce_panel_create_button ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_create_toggle_button ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_get_channel_name ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_pixbuf_from_source ##### -->
+<para>
+
+</para>
+
+@source: 
+@icon_theme: 
+@size: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_pixbuf_from_source_at_size ##### -->
+<para>
+
+</para>
+
+@source: 
+@icon_theme: 
+@dest_width: 
+@dest_height: 
+@Returns: 
+
+
+<!-- ##### MACRO xfce_allow_panel_customization ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO xfce_create_panel_button ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO xfce_create_panel_toggle_button ##### -->
+<para>
+
+</para>
+
+
+

@@ -1,0 +1,89 @@
+<!-- ##### SECTION Title ##### -->
+config
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### VARIABLE libxfce4panel_major_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE libxfce4panel_minor_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### VARIABLE libxfce4panel_micro_version ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION libxfce4panel_check_version ##### -->
+<para>
+
+</para>
+
+@required_major: 
+@required_minor: 
+@required_micro: 
+@Returns: 
+
+
+<!-- ##### MACRO LIBXFCE4PANEL_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4PANEL_MAJOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4PANEL_MINOR_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4PANEL_MICRO_VERSION ##### -->
+<para>
+
+</para>
+
+
+
+<!-- ##### MACRO LIBXFCE4PANEL_CHECK_VERSION ##### -->
+<para>
+
+</para>
+
+@major: 
+@minor: 
+@micro: 
+
+
