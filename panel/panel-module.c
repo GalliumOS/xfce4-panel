@@ -38,12 +38,6 @@
 #define PANEL_PLUGINS_LIB_DIR (LIBDIR G_DIR_SEPARATOR_S "panel" G_DIR_SEPARATOR_S "plugins")
 #define PANEL_PLUGINS_LIB_DIR_OLD (LIBDIR G_DIR_SEPARATOR_S "panel-plugins")
 
-static const gchar *compat_paths[] =
-{
-  PANEL_PLUGINS_LIB_DIR_OLD,
-  "/usr/lib/xfce4/panel/plugins",
-  "/usr/lib/xfce4/panel-plugins"
-};
 
 typedef enum _PanelModuleRunMode PanelModuleRunMode;
 typedef enum _PanelModuleUnique  PanelModuleUnique;
@@ -316,7 +310,6 @@ panel_module_new_from_desktop_file (const gchar *filename,
   const gchar *module_exec;
   const gchar *module_unique;
   gboolean     found;
-  gsize        i;
 
   panel_return_val_if_fail (!exo_str_is_empty (filename), NULL);
   panel_return_val_if_fail (!exo_str_is_empty (name), NULL);
@@ -357,11 +350,11 @@ panel_module_new_from_desktop_file (const gchar *filename,
       path = g_module_build_path (PANEL_PLUGINS_LIB_DIR, module_name);
       found = g_file_test (path, G_FILE_TEST_EXISTS);
 
-      for (i = 0; !found && i < G_N_ELEMENTS (compat_paths); ++i)
+      if (!found)
         {
           /* deprecated location for module plugin directories */
           g_free (path);
-          path = g_module_build_path (compat_paths[i], module_name);
+          path = g_module_build_path (PANEL_PLUGINS_LIB_DIR_OLD, module_name);
           found = g_file_test (path, G_FILE_TEST_EXISTS);
         }
 
