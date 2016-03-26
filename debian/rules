@@ -15,10 +15,10 @@ override_dh_autoreconf:
 	dh_autoreconf xdt-autogen
 
 override_dh_auto_configure:
-	dh_auto_configure -- --enable-gtk3 --disable-silent-rules
+	dh_auto_configure -- --disable-silent-rules --enable-gtk3
 
 override_dh_auto_clean:
 	dh_auto_clean
 
 %:
-	dh $@ --parallel --with autoreconf
+	dh $@ --parallel  --with autoreconf
