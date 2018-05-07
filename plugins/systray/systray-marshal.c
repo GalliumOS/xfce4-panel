@@ -1,7 +1,5 @@
 #include "systray-marshal.h"
-
-#include	<glib-object.h>
-
+#include <glib-object.h>
 
 #ifdef G_ENABLE_DEBUG
 #define g_marshal_value_peek_boolean(v)  g_value_get_boolean (v)
@@ -49,7 +47,6 @@
 #define g_marshal_value_peek_variant(v)  (v)->data[0].v_pointer
 #endif /* !G_ENABLE_DEBUG */
 
-
 /* VOID:OBJECT,STRING,LONG,LONG (systray-marshal.list:1) */
 void
 _systray_marshal_VOID__OBJECT_STRING_LONG_LONG (GClosure     *closure,
@@ -59,15 +56,15 @@ _systray_marshal_VOID__OBJECT_STRING_LONG_LONG (GClosure     *closure,
                                                 gpointer      invocation_hint G_GNUC_UNUSED,
                                                 gpointer      marshal_data)
 {
-  typedef void (*GMarshalFunc_VOID__OBJECT_STRING_LONG_LONG) (gpointer     data1,
-                                                              gpointer     arg_1,
-                                                              gpointer     arg_2,
-                                                              glong        arg_3,
-                                                              glong        arg_4,
-                                                              gpointer     data2);
-  register GMarshalFunc_VOID__OBJECT_STRING_LONG_LONG callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  typedef void (*GMarshalFunc_VOID__OBJECT_STRING_LONG_LONG) (gpointer data1,
+                                                              gpointer arg1,
+                                                              gpointer arg2,
+                                                              glong arg3,
+                                                              glong arg4,
+                                                              gpointer data2);
+  GCClosure *cc = (GCClosure *) closure;
+  gpointer data1, data2;
+  GMarshalFunc_VOID__OBJECT_STRING_LONG_LONG callback;
 
   g_return_if_fail (n_param_values == 5);
 
@@ -100,13 +97,13 @@ _systray_marshal_VOID__OBJECT_LONG (GClosure     *closure,
                                     gpointer      invocation_hint G_GNUC_UNUSED,
                                     gpointer      marshal_data)
 {
-  typedef void (*GMarshalFunc_VOID__OBJECT_LONG) (gpointer     data1,
-                                                  gpointer     arg_1,
-                                                  glong        arg_2,
-                                                  gpointer     data2);
-  register GMarshalFunc_VOID__OBJECT_LONG callback;
-  register GCClosure *cc = (GCClosure*) closure;
-  register gpointer data1, data2;
+  typedef void (*GMarshalFunc_VOID__OBJECT_LONG) (gpointer data1,
+                                                  gpointer arg1,
+                                                  glong arg2,
+                                                  gpointer data2);
+  GCClosure *cc = (GCClosure *) closure;
+  gpointer data1, data2;
+  GMarshalFunc_VOID__OBJECT_LONG callback;
 
   g_return_if_fail (n_param_values == 3);
 

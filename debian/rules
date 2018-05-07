@@ -8,11 +8,8 @@ DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 override_dh_install:
 	dh_install --fail-missing -X .la
 
-override_dh_strip:
-	dh_strip --dbg-package=xfce4-panel-dbg
-
 override_dh_autoreconf:
-	dh_autoreconf xdt-autogen
+	NOCONFIGURE=1 dh_autoreconf xdt-autogen
 
 override_dh_auto_configure:
 	dh_auto_configure -- --disable-silent-rules --enable-gtk3
@@ -20,5 +17,8 @@ override_dh_auto_configure:
 override_dh_auto_clean:
 	dh_auto_clean
 
+override_dh_strip:
+	dh_strip --dbgsym-migration='xfce4-panel-dbg (<< 4.12.1-1~)'
+
 %:
-	dh $@ --parallel  --with autoreconf
+	dh $@ --parallel --with autoreconf

@@ -7,11 +7,7 @@ G_BEGIN_DECLS
 
 #ifndef _DBUS_GLIB_ASYNC_DATA_FREE
 #define _DBUS_GLIB_ASYNC_DATA_FREE
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-void
+static inline void
 _dbus_glib_async_data_free (gpointer stuff)
 {
 	g_slice_free (DBusGAsyncData, stuff);
@@ -21,11 +17,7 @@ _dbus_glib_async_data_free (gpointer stuff)
 #ifndef DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel_Wrapper
 #define DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel_Wrapper
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 wrapper_dbus_provider_signal (DBusGProxy *proxy, const guint IN_signal, GError **error)
 
 {
@@ -45,11 +37,7 @@ wrapper_dbus_provider_signal_async_callback (DBusGProxy *proxy, DBusGProxyCall *
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 wrapper_dbus_provider_signal_async (DBusGProxy *proxy, const guint IN_signal, wrapper_dbus_provider_signal_reply callback, gpointer userdata)
 
 {
@@ -59,11 +47,7 @@ wrapper_dbus_provider_signal_async (DBusGProxy *proxy, const guint IN_signal, wr
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "ProviderSignal", wrapper_dbus_provider_signal_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_UINT, IN_signal, G_TYPE_INVALID);
 }
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 wrapper_dbus_remote_event_result (DBusGProxy *proxy, const guint IN_handle, const gboolean IN_result, GError **error)
 
 {
@@ -83,11 +67,7 @@ wrapper_dbus_remote_event_result_async_callback (DBusGProxy *proxy, DBusGProxyCa
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 wrapper_dbus_remote_event_result_async (DBusGProxy *proxy, const guint IN_handle, const gboolean IN_result, wrapper_dbus_remote_event_result_reply callback, gpointer userdata)
 
 {

@@ -1,6 +1,5 @@
 01_support-non-multiarch-modules.patch
 02_pager-size-for-viewport.patch
-xubuntu_migrate-tasklist-separator.patch
-02_support-dmtool.patch
-xubuntu_xfpanel-switch-integration.patch
+03_fix-spelling-error-in-binary.patch
+xubuntu_support-dmtool.patch
 external_plugin_black_fix.diff
