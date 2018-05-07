@@ -1,0 +1,81 @@
+Description: Expand the separator next to the tasklist plugin on upgrade
+ This restores the layout used previously for people upgrading from 4.8.
+ .
+ Not forward(able|ed), this hack will only work with xubuntu-default-settings'
+ layout (and probably mythbuntu/ubuntustudio as well).
+Author: Lionel Le Folgoc <mrpouit@ubuntu.com>
+Forwarded: not-needed
+
+--- xfce4-panel-4.10.0.orig/migrate/migrate-config.c
++++ xfce4-panel-4.10.0/migrate/migrate-config.c
+@@ -53,6 +53,60 @@ migrate_config_strchr_count (const gchar
+ 
+ 
+ static void
++xubuntu_migrate_tasklist (GHashTable    *plugins,
++                          XfconfChannel *channel)
++{
++  const GValue *value;
++  GPtrArray    *array;
++  guint         j;
++  gint          plugin_id, tsk_index, sep_index;
++
++  /* First, check that plugin-2 and plugin-3 still match the default xubuntu
++   * settings */
++  value = g_hash_table_lookup (plugins, "/plugins/plugin-2");
++  if (!G_VALUE_HOLDS_STRING (value)
++      || g_strcmp0 (g_value_get_string (value), "tasklist") != 0)
++    return;
++  value = g_hash_table_lookup (plugins, "/plugins/plugin-3");
++  if (!G_VALUE_HOLDS_STRING (value)
++      || g_strcmp0 (g_value_get_string (value), "separator") != 0)
++    return;
++
++  /* Then, check that plugin-2 (tasklist) and plugin-3 (separator) are on the
++   * first same panel as expected */
++  array = xfconf_channel_get_arrayv (XFCONF_CHANNEL (channel), "/panels/panel-0/plugin-ids");
++  if (array == NULL)
++    return;
++
++  tsk_index = sep_index = 0;
++  for (j = 0; j < array->len; j++)
++    {
++      /* get the plugin id */
++      value = g_ptr_array_index (array, j);
++      if (value == NULL)
++        continue;
++
++      plugin_id = g_value_get_int (value);
++      if (plugin_id == 2)
++        tsk_index = j;
++      else if (plugin_id == 3)
++        sep_index = j;
++    }
++  xfconf_array_free (array);
++
++  if (tsk_index == 0
++      || sep_index == 0
++      || sep_index != tsk_index + 1)
++    return;
++
++  /* Apparently this is the default xubuntu layout, so expand the
++   * separator to workaround non-expanding tasklist in 4.10 */
++  xfconf_channel_set_bool (XFCONF_CHANNEL (channel), "/plugins/plugin-3/expand", TRUE);
++}
++
++
++
++static void
+ migrate_config_session_menu (gpointer key,
+                              gpointer value,
+                              gpointer channel)
+@@ -187,6 +241,9 @@ migrate_config (XfconfChannel  *channel,
+ 
+       /* migrate old action plugins */
+       g_hash_table_foreach (plugins, migrate_config_action_48, channel);
++
++      /* hack for Xubuntu: expand the separator next to the tasklist */
++      xubuntu_migrate_tasklist (plugins, channel);
+     }
+ 
+   /* migrate horizontal to mode property */

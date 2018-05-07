@@ -1,0 +1,76 @@
+<!-- ##### SECTION Title ##### -->
+register-plugins
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### USER_FUNCTION XfcePanelPluginCheck ##### -->
+<para>
+
+</para>
+
+@screen: 
+@Returns: 
+
+
+<!-- ##### USER_FUNCTION XfcePanelPluginFunc ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### USER_FUNCTION XfcePanelPluginPreInit ##### -->
+<para>
+
+</para>
+
+@argc: 
+@argv: 
+@Returns: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_WITH_CHECK ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+@check_func: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_FULL ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+@preinit_func: 
+@check_func: 
+
+

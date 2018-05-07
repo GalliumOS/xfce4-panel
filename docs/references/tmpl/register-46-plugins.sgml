@@ -1,0 +1,66 @@
+<!-- ##### SECTION Title ##### -->
+register-46-plugins
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_FULL ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+@preinit_func: 
+@check_func: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_EXTERNAL_WITH_CHECK ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+@check_func: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_INTERNAL ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+
+
+<!-- ##### MACRO XFCE_PANEL_PLUGIN_REGISTER_INTERNAL_WITH_CHECK ##### -->
+<para>
+
+</para>
+
+@construct_func: 
+@check_func: 
+
+

@@ -1,0 +1,468 @@
+<!-- ##### SECTION Title ##### -->
+xfce-panel-plugin
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT XfcePanelPlugin ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SIGNAL XfcePanelPlugin::about ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+
+<!-- ##### SIGNAL XfcePanelPlugin::configure-plugin ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+
+<!-- ##### SIGNAL XfcePanelPlugin::free-data ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+
+<!-- ##### SIGNAL XfcePanelPlugin::mode-changed ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL XfcePanelPlugin::nrows-changed ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL XfcePanelPlugin::orientation-changed ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL XfcePanelPlugin::remote-event ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+@arg1: 
+@arg2: 
+@Returns: 
+
+<!-- ##### SIGNAL XfcePanelPlugin::removed ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+
+<!-- ##### SIGNAL XfcePanelPlugin::save ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+
+<!-- ##### SIGNAL XfcePanelPlugin::screen-position-changed ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+@arg1: 
+
+<!-- ##### SIGNAL XfcePanelPlugin::size-changed ##### -->
+<para>
+
+</para>
+
+@xfcepanelplugin: the object which received the signal.
+@arg1: 
+@Returns: 
+
+<!-- ##### ARG XfcePanelPlugin:arguments ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:comment ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:display-name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:expand ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:mode ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:name ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:nrows ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:orientation ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:screen-position ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:shrink ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:size ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:small ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelPlugin:unique-id ##### -->
+<para>
+
+</para>
+
+<!-- ##### STRUCT XfcePanelPluginClass ##### -->
+<para>
+
+</para>
+
+@construct: 
+@screen_position_changed: 
+@size_changed: 
+@orientation_changed: 
+@free_data: 
+@save: 
+@about: 
+@configure_plugin: 
+@removed: 
+@remote_event: 
+@mode_changed: 
+@nrows_changed: 
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_name ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_display_name ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_comment ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_unique_id ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_property_base ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_arguments ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_size ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_expand ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_set_expand ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@expand: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_orientation ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_screen_position ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_get_locked ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_take_window ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@window: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_add_action_widget ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@widget: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_menu_insert_item ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@item: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_menu_show_configure ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_menu_show_about ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_remove ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_block_menu ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_unblock_menu ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_register_menu ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@menu: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_arrow_type ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_position_widget ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@menu_widget: 
+@attach_widget: 
+@x: 
+@y: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_position_menu ##### -->
+<para>
+
+</para>
+
+@menu: 
+@x: 
+@y: 
+@push_in: 
+@panel_plugin: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_focus_widget ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@widget: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_block_autohide ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@blocked: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_lookup_rc_file ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_plugin_save_location ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@create: 
+@Returns: 
+
+
+<!-- ##### MACRO xfce_panel_plugin_xfconf_channel_new ##### -->
+<para>
+
+</para>
+
+@plugin: 
+
+
+<!-- ##### MACRO xfce_panel_plugin_set_panel_hidden ##### -->
+<para>
+
+</para>
+
+@plugin: 
+@hidden: 
+
+

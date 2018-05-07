@@ -1,0 +1,57 @@
+<!-- ##### SECTION Title ##### -->
+xfce-hvbox
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT XfceHVBox ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION xfce_hvbox_new ##### -->
+<para>
+
+</para>
+
+@orientation: 
+@homogeneous: 
+@spacing: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_hvbox_set_orientation ##### -->
+<para>
+
+</para>
+
+@hvbox: 
+@orientation: 
+
+
+<!-- ##### FUNCTION xfce_hvbox_get_orientation ##### -->
+<para>
+
+</para>
+
+@hvbox: 
+@Returns: 
+
+

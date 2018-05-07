@@ -1,0 +1,119 @@
+<!-- ##### SECTION Title ##### -->
+xfce-panel-image
+
+<!-- ##### SECTION Short_Description ##### -->
+
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### SECTION Image ##### -->
+
+
+<!-- ##### STRUCT XfcePanelImage ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ARG XfcePanelImage:pixbuf ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelImage:size ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelImage:source ##### -->
+<para>
+
+</para>
+
+<!-- ##### ARG XfcePanelImage:force-gtk-icon-sizes ##### -->
+<para>
+
+</para>
+
+<!-- ##### FUNCTION xfce_panel_image_new ##### -->
+<para>
+
+</para>
+
+@void: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_new_from_pixbuf ##### -->
+<para>
+
+</para>
+
+@pixbuf: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_new_from_source ##### -->
+<para>
+
+</para>
+
+@source: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_set_from_pixbuf ##### -->
+<para>
+
+</para>
+
+@image: 
+@pixbuf: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_set_from_source ##### -->
+<para>
+
+</para>
+
+@image: 
+@source: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_set_size ##### -->
+<para>
+
+</para>
+
+@image: 
+@size: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_get_size ##### -->
+<para>
+
+</para>
+
+@image: 
+@Returns: 
+
+
+<!-- ##### FUNCTION xfce_panel_image_clear ##### -->
+<para>
+
+</para>
+
+@image: 
+
+
