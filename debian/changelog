@@ -1,3 +1,154 @@
+xfce4-panel (4.12.2-1ubuntu1) devel; urgency=medium
+
+  * Merge from Debian unstable. Remaining changes:
+    - d/p/xubuntu_support-dmtool.patch:
+      + Add support for dm-tool for user-switching
+    - Use dh-autoreconf to update libtool for ppc64el.
+  * Changes dropped:
+    - d/p/xubuntu_migrate-tasklist-separator.patch:
+      + Drop migration code since this is LTS+2.
+
+ -- Unit 193 <unit193@ubuntu.com>  Fri, 16 Feb 2018 04:01:48 -0500
+
+xfce4-panel (4.12.2-1) unstable; urgency=medium
+
+  * debian/watch updated to track 4.12 branch.
+  * New upstream bugfix release.
+  * debian/control:
+    - update standards version to 4.1.2.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 17 Dec 2017 15:49:33 +0100
+
+xfce4-panel (4.12.1-2) unstable; urgency=medium
+
+  * debian/control:
+    - make libxfce4panel-2.0-dev depend on development packages for gtk-3,
+      glib and libxfce4util, following the pkg-config file.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 16 Nov 2016 22:14:24 +0100
+
+xfce4-panel (4.12.1-1ubuntu1) zesty; urgency=medium
+
+  * Merge from Debian unstable. Remaining changes:
+    - debian/patches:
+      + xubuntu_migrate-tasklist-separator.patch: added, try to be smart and
+        work around the non-expandable tasklist plugin from 4.10 by setting
+        as expandable the separator next to it (should work with the default
+        panel layouts from Xubuntu, Mythbuntu and UbuntuStudio).
+      + xubuntu_support-dmtool.patch: Add support for dm-tool for
+        user-switching
+      + xubuntu_xfpanel-switch-integration.patch: Dropped, included upstream
+    - Use dh-autoreconf to update libtool for ppc64el.
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Thu, 03 Nov 2016 05:49:47 -0400
+
+xfce4-panel (4.12.1-1) unstable; urgency=medium
+
+  [ Mateusz Łukasik ]
+  * New upstream release.
+  * debian/control:
+    - Update standards version to 3.9.8.
+    - Fix duplicate section fields.
+    - Use secured link for VCS.
+    - Drop xfce4-panel-dbg package.
+  * debian/rules:
+   - migrate to dbgsym packages.
+  * debian/copyright: Fix licences location.
+  * debian/patches:
+    - Add 03_fix-spelling-error-in-binary.patch to fix lintian warning.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Thu, 27 Oct 2016 21:32:25 +0200
+
+xfce4-panel (4.12.0-4ubuntu1) devel; urgency=medium
+
+  * Merge from Debian unstable. Remaining changes:
+    - debian/patches:
+      + xubuntu_migrate-tasklist-separator.patch: added, try to be smart and
+        work around the non-expandable tasklist plugin from 4.10 by setting
+        as expandable the separator next to it (should work with the default
+        panel layouts from Xubuntu, Mythbuntu and UbuntuStudio).
+      + 02_support-dmtool.patch: Add support for dm-tool for user-switching
+      + xubuntu_xfpanel-switch-integration.patch: Add,
+        Include patch to add integration with xfpanel-switch
+    - Use dh-autoreconf to update libtool for ppc64el.
+
+ -- Unit 193 <unit193@ubuntu.com>  Wed, 23 Mar 2016 16:48:31 +0000
+
+xfce4-panel (4.12.0-4) unstable; urgency=medium
+
+  * debian/xfce4-panel.maintscript dropped, 4.7 transition is long gone.
+  * debian/xfce4-panel.postinst dropped, we don't need to manually call
+    ldconfig since dh_makeshlibs already does it for us.        closes: #819039
+  * debian/control: update standards version to 3.9.7.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 23 Mar 2016 10:32:21 +0100
+
+xfce4-panel (4.12.0-3ubuntu2) wily; urgency=medium
+
+  * debian/patches/xubuntu_xfpanel-switch-integration.patch:
+    - Include patch to add integration with xfpanel-switch
+
+ -- Sean Davis <smd.seandavis@gmail.com>  Mon, 31 Aug 2015 06:43:04 -0400
+
+xfce4-panel (4.12.0-3ubuntu1) wily; urgency=medium
+
+  * Merge from debian. Remaining changes:
+    - debian/patches:
+      + xubuntu_migrate-tasklist-separator.patch: added, try to be smart and
+        work around the non-expandable tasklist plugin from 4.10 by setting
+        as expandable the separator next to it (should work with the default
+        panel layouts from Xubuntu, Mythbuntu and UbuntuStudio).
+      + 02_support-dmtool.patch: Add support for dm-tool for user-switching
+    - Use dh-autoreconf to update libtool for ppc64el.
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Fri, 26 Jun 2015 06:36:29 +1000
+
+xfce4-panel (4.12.0-3) unstable; urgency=medium
+
+  [ Mateusz Łukasik ]
+  * debian/control:
+    - Make libxfce4panel-2.0-dev depend on libxfce4panel-2.0-4.
+  * Add 02_pager-size-for-viewport.patch. (Closes: #785582)
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - drop libxfce4panel-2.0-4 dependency on xfce4-panel.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 24 Jun 2015 21:51:20 +0200
+
+xfce4-panel (4.12.0-2ubuntu1) wily; urgency=medium
+
+  * Merge from debian. Remaining changes:
+    - debian/patches:
+      + xubuntu_migrate-tasklist-separator.patch: added, try to be smart and
+        work around the non-expandable tasklist plugin from 4.10 by setting
+        as expandable the separator next to it (should work with the default
+        panel layouts from Xubuntu, Mythbuntu and UbuntuStudio).
+      + 02_support-dmtool.patch: Add support for dm-tool for user-switching
+    - Use dh-autoreconf to update libtool for ppc64el.
+  * Make libxfce4panel-2.0-dev depend on xfce4-panel-dev, libxfce4panel-2.0-4
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Tue, 26 May 2015 06:48:34 +1000
+
+xfce4-panel (4.12.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Wed, 06 May 2015 15:58:14 +0200
+
+xfce4-panel (4.12.0-1) experimental; urgency=medium
+
+  [ Mateusz Łukasik ]
+  * New upstream development release.
+  * debian/control:
+    update standards version to 3.9.6.
+
+  [ Yves-Alexis Perez ]
+  * debian/control:
+    - fix typo in -dbg short description.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Sun, 08 Mar 2015 20:33:56 +0100
+
 xfce4-panel (4.12.0-0ubuntu1) vivid; urgency=medium
 
   * New upstream release. LP: #1424887
@@ -12,12 +163,34 @@ xfce4-panel (4.11.2-0ubuntu1) vivid; urgency=medium
 
  -- Unit 193 <unit193@ubuntu.com>  Sun, 04 Jan 2015 13:04:39 -0500
 
+xfce4-panel (4.11.1-1) experimental; urgency=medium
+
+  * New upstream development release.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Mon, 23 Jun 2014 21:32:47 +0200
+
 xfce4-panel (4.11.1-0ubuntu2) utopic; urgency=medium
 
   * debian/patches/02_support-dmtool.patch
     - Add support for dm-tool for user-switching (LP: #1320560)
 
  -- Sean Davis <smd.seandavis@gmail.com>  Tue, 14 Oct 2014 06:15:01 -0400
+
+xfce4-panel (4.11.0-2) experimental; urgency=medium
+
+  * debian/control:
+    - add build-dep on libgtk-3-dev.
+    - add libxfce4-panel-2.0-4 and libxfce4panel-2.0-dev packages, shipping
+      the GTK3 variant of the Xfce panel plugins library.
+    - update libxfce4ui-1 build-dep to 4.11.
+  * debian/libxfce4panel-2.0-4.install, debian/libxfce4panel-2.0-dev.install:
+    - ship libxfce4panel-2.0 files.
+  * debian/rules:
+    - enable GTK3 check.
+  * debian/libxfce4panel-2.0-4.symbols:
+    - add a symbol file for libxfce4panel-2.0-4.
+
+ -- Yves-Alexis Perez <corsac@debian.org>  Tue, 25 Mar 2014 22:39:34 +0100
 
 xfce4-panel (4.11.1-0ubuntu1) utopic; urgency=medium
 
@@ -825,4 +998,3 @@ xfce4-panel (4.0.0.final-1) unstable; urgency=low
   * Initial Release.
 
  -- Martin Loschwitz <madkiss@debian.org>  Tue, 29 Sep 2003 17:09:09 +0200
-

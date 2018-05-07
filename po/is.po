@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
-# Translators:
-# Sveinn í Felli <sv1@fellsnet.is>, 2014
-# Sveinn í Felli <sv1@fellsnet.is>, 2010,2012-2013
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Xfce4-panel\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-05 06:30+0200\n"
-"PO-Revision-Date: 2014-09-22 18:10+0000\n"
-"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
-"Language-Team: Icelandic (http://www.transifex.com/projects/p/xfce4-panel/language/is/)\n"
+"POT-Creation-Date: 2017-09-09 18:31+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Xfce Bot <transifex@xfce.org>, 2017\n"
+"Language-Team: Icelandic (https://www.transifex.com/xfce/teams/16840/is/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: is\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);\n"
 
 #: ../panel-desktop-handler.desktop.in.h:1
 msgid "Create Launcher on the panel"
@@ -27,10 +26,12 @@ msgstr "Búa til ræsi á skjástiku"
 msgid ""
 "Add a new launcher to the panel based on the information of this desktop "
 "file"
-msgstr "Bæta við nýjum ræsi á þessa skjástiku, byggt á upplýsingum frá þessari skjáborðsskrá"
+msgstr ""
+"Bæta við nýjum ræsi á þessa skjástiku, byggt á upplýsingum frá þessari "
+"skjáborðsskrá"
 
 #: ../panel-preferences.desktop.in.h:1
-#: ../panel/panel-preferences-dialog.glade.h:10 ../panel/panel-window.c:2557
+#: ../panel/panel-preferences-dialog.glade.h:10 ../panel/panel-window.c:2615
 #: ../migrate/main.c:117
 msgid "Panel"
 msgstr "Skjástika"
@@ -41,13 +42,13 @@ msgstr "Sérsníða skjástiku"
 
 #. I18N: %s is the name of the plugin
 #: ../libxfce4panel/xfce-panel-plugin.c:1032
-#: ../panel/panel-preferences-dialog.c:1159
+#: ../panel/panel-preferences-dialog.c:1190
 #, c-format
 msgid "Are you sure that you want to remove \"%s\"?"
 msgstr "Ertu viss að þú viljir fjarlægja \"%s\"?"
 
 #: ../libxfce4panel/xfce-panel-plugin.c:1037
-#: ../panel/panel-preferences-dialog.c:1162
+#: ../panel/panel-preferences-dialog.c:1193
 msgid "If you remove the item from the panel, it is permanently lost."
 msgstr "Ef þú fjarlægir atriði af skjástikunni, tapast það endanlega."
 
@@ -61,17 +62,17 @@ msgid "Pane_l"
 msgstr "Skjásti_ka"
 
 #. add new items
-#: ../libxfce4panel/xfce-panel-plugin.c:1239 ../panel/panel-window.c:2569
+#: ../libxfce4panel/xfce-panel-plugin.c:1239 ../panel/panel-window.c:2627
 msgid "Add _New Items..."
 msgstr "Bæta við _nýjum atriðum..."
 
 #. customize panel
-#: ../libxfce4panel/xfce-panel-plugin.c:1250 ../panel/panel-window.c:2580
+#: ../libxfce4panel/xfce-panel-plugin.c:1250 ../panel/panel-window.c:2638
 msgid "Panel Pr_eferences..."
 msgstr "_Kjörstillingar skjástiku..."
 
 #. logout item
-#: ../libxfce4panel/xfce-panel-plugin.c:1267 ../panel/panel-window.c:2608
+#: ../libxfce4panel/xfce-panel-plugin.c:1267 ../panel/panel-window.c:2666
 msgid "Log _Out"
 msgstr "_Skrá út"
 
@@ -178,7 +179,9 @@ msgstr "Mistókst að senda D-Bus boð"
 msgid ""
 "Do you want to start the panel? If you do, make sure you save the session on"
 " logout, so the panel is automatically started the next time you login."
-msgstr "Viltu ræsa skjástikuna? Ef svo er, gakktu úr skugga um að þú vistir setuna við útskráningu, svo að skjástikan sæaist sjálfkrafa við næstu innskráningu."
+msgstr ""
+"Viltu ræsa skjástikuna? Ef svo er, gakktu úr skugga um að þú vistir setuna "
+"við útskráningu, svo að skjástikan sæaist sjálfkrafa við næstu innskráningu."
 
 #: ../panel/main.c:407 ../panel/main.c:421
 #, c-format
@@ -197,7 +200,9 @@ msgstr "Bú_a til forritaræsi..."
 msgid ""
 "This will create a new launcher plugin on the panel and inserts the dropped "
 "files as menu items."
-msgstr "Þetta býr til nýtt ræsiíforrit á skjástikunni og setur skrárnar sem sleppt er þar sem valmyndafærslur."
+msgstr ""
+"Þetta býr til nýtt ræsiíforrit á skjástikunni og setur skrárnar sem sleppt "
+"er þar sem valmyndafærslur."
 
 #: ../panel/panel-application.c:988
 #, c-format
@@ -210,7 +215,9 @@ msgstr[1] "Búa til nýjan ræsi úr %d skjáborðsskrám"
 msgid ""
 "You have started X without session manager. Clicking Quit will close the X "
 "server."
-msgstr "Þú ræstir X án setustjórnunar. Ef smellt er á \"Hætta\" verður X-þjóninum lokað."
+msgstr ""
+"Þú ræstir X án setustjórnunar. Ef smellt er á \"Hætta\" verður X-þjóninum "
+"lokað."
 
 #: ../panel/panel-application.c:1729
 msgid "Are you sure you want to quit the panel?"
@@ -224,14 +231,17 @@ msgstr "Gat ekki keyrt skipunina \"%s\""
 #: ../panel/panel-dbus-client.c:211
 msgid ""
 "Invalid plugin event syntax specified. Use PLUGIN-NAME:NAME[:TYPE:VALUE]."
-msgstr "Ógilt form viðbótaraðgerðar tilgreint. Notaðu PLUGIN-NAME:NAME[:TYPE:VALUE]."
+msgstr ""
+"Ógilt form viðbótaraðgerðar tilgreint. Notaðu PLUGIN-NAME:NAME[:TYPE:VALUE]."
 
 #: ../panel/panel-dbus-client.c:244
 #, c-format
 msgid ""
 "Invalid hint type \"%s\". Valid types are bool, double, int, string and "
 "uint."
-msgstr "Ótæk gerð vísbendingar (hint type) \"%s\". Gildar gerðir eru bool, double, int, string og uint."
+msgstr ""
+"Ótæk gerð vísbendingar (hint type) \"%s\". Gildar gerðir eru bool, double, "
+"int, string og uint."
 
 #: ../panel/panel-dialogs.c:65
 msgid "Maintainers"
@@ -262,7 +272,7 @@ msgstr "Bæta við nýju atriði"
 msgid "Please choose a panel for the new plugin:"
 msgstr "Veldu skjástiku undir nýja íhlutinn:"
 
-#: ../panel/panel-dialogs.c:192 ../panel/panel-preferences-dialog.c:842
+#: ../panel/panel-dialogs.c:192 ../panel/panel-preferences-dialog.c:853
 #, c-format
 msgid "Panel %d"
 msgstr "Skjástika %d"
@@ -271,7 +281,9 @@ msgstr "Skjástika %d"
 msgid ""
 "Because the panel is running in kiosk mode, you are not allowed to make "
 "changes to the panel configuration as a regular user"
-msgstr "Þar sem skjástikan er keyrandi í sjálfsalaham (kiosk mode) er þér ekki leyfilegt sem venjulegum notanda að gera breytingar á uppsetningu hennar."
+msgstr ""
+"Þar sem skjástikan er keyrandi í sjálfsalaham (kiosk mode) er þér ekki "
+"leyfilegt sem venjulegum notanda að gera breytingar á uppsetningu hennar."
 
 #: ../panel/panel-dialogs.c:234
 msgid "Modifying the panel is not allowed"
@@ -305,52 +317,57 @@ msgid ""
 "The plugin restarted more than once in the last %d seconds. If you press "
 "Execute the panel will try to restart the plugin otherwise it will be "
 "permanently removed from the panel."
-msgstr "Viðbótin endurræstist oftar en einu sinni á síðustu %d sekúndum. Ef þú ýtir á 'Keyra' mun skjástikan reyna að endurræsa viðbótina, en annars verður henni endanlega eytt af skjástikunni."
+msgstr ""
+"Viðbótin endurræstist oftar en einu sinni á síðustu %d sekúndum. Ef þú ýtir "
+"á 'Keyra' mun skjástikan reyna að endurræsa viðbótina, en annars verður "
+"henni endanlega eytt af skjástikunni."
 
-#: ../panel/panel-preferences-dialog.c:481
+#: ../panel/panel-preferences-dialog.c:492
 msgid "Automatic"
 msgstr "Sjálfvirkt"
 
 #. I18N: screen name in the output selector
-#: ../panel/panel-preferences-dialog.c:500
+#: ../panel/panel-preferences-dialog.c:511
 #, c-format
 msgid "Screen %d"
 msgstr "Skjár %d"
 
 #. I18N: monitor name in the output selector
-#: ../panel/panel-preferences-dialog.c:526
+#: ../panel/panel-preferences-dialog.c:537
 #, c-format
 msgid "Monitor %d"
 msgstr "Skjátæki %d"
 
-#: ../panel/panel-preferences-dialog.c:908
+#: ../panel/panel-preferences-dialog.c:919
 msgid "The panel and plugin configurations will be permanently removed"
 msgstr "Skjástikan og stillingar viðbótarinnar verða endanlega fjarlægð"
 
-#: ../panel/panel-preferences-dialog.c:909
+#: ../panel/panel-preferences-dialog.c:920
 #, c-format
 msgid "Are you sure you want to remove panel %d?"
 msgstr "Ertu viss að þú viljir fjarlægja skjástiku %d?"
 
 #. I18N: append (external) in the preferences dialog if the plugin
 #. * runs external
-#: ../panel/panel-preferences-dialog.c:1001
+#: ../panel/panel-preferences-dialog.c:1032
 #, c-format
 msgid "%s <span color=\"grey\" size=\"small\">(external)</span>"
 msgstr "%s <span color=\"grey\" size=\"small\">(ytra)</span>"
 
 #. I18N: tooltip in preferences dialog when hovering an item in the list
 #. * for external plugins
-#: ../panel/panel-preferences-dialog.c:1006
+#: ../panel/panel-preferences-dialog.c:1037
 #, c-format
 msgid ""
 "Internal name: %s-%d\n"
 "PID: %d"
-msgstr "Innra heiti: %s-%d\nPID: %d"
+msgstr ""
+"Innra heiti: %s-%d\n"
+"PID: %d"
 
 #. I18N: tooltip in preferences dialog when hovering an item in the list
 #. * for internal plugins
-#: ../panel/panel-preferences-dialog.c:1018
+#: ../panel/panel-preferences-dialog.c:1049
 #, c-format
 msgid "Internal name: %s-%d"
 msgstr "Innra heiti: %s-%d"
@@ -402,181 +419,199 @@ msgid "Remove the currently selected panel"
 msgstr "Fjarlægja valda skjástiku"
 
 #: ../panel/panel-preferences-dialog.glade.h:13
+msgid "Switch between panel presets"
+msgstr "Skipta milli forstillinga fyrir spjöld"
+
+#: ../panel/panel-preferences-dialog.glade.h:14
 msgid "M_ode:"
 msgstr "_Hamur:"
 
-#: ../panel/panel-preferences-dialog.glade.h:14
+#: ../panel/panel-preferences-dialog.glade.h:15
 msgid "O_utput:"
 msgstr "Útta_k:"
 
-#: ../panel/panel-preferences-dialog.glade.h:15
+#: ../panel/panel-preferences-dialog.glade.h:16
 msgid "Span mo_nitors"
 msgstr "Spa_nna skjái"
 
-#: ../panel/panel-preferences-dialog.glade.h:16
+#: ../panel/panel-preferences-dialog.glade.h:17
 msgid "Select this option to extend the panel over multiple monitors."
 msgstr "Veldu þennan valkost til að teygja skjástikuna yfir marga skjái."
 
-#: ../panel/panel-preferences-dialog.glade.h:17
+#: ../panel/panel-preferences-dialog.glade.h:18
 msgid "_Lock panel"
 msgstr "_Læsa spjaldi"
 
-#: ../panel/panel-preferences-dialog.glade.h:18
+#: ../panel/panel-preferences-dialog.glade.h:19
 msgid ""
 "Select this option to hide the handles of the panel and lock its position."
-msgstr "Veldu þennan valkost til að fela haldföng skjástikunnar og læsa stöðu hennar."
+msgstr ""
+"Veldu þennan valkost til að fela haldföng skjástikunnar og læsa stöðu "
+"hennar."
 
-#: ../panel/panel-preferences-dialog.glade.h:19
+#: ../panel/panel-preferences-dialog.glade.h:20
 msgid "Automatically hide the panel:"
 msgstr "Fela skjástiku sjálfkrafa:"
 
-#: ../panel/panel-preferences-dialog.glade.h:20
+#: ../panel/panel-preferences-dialog.glade.h:21
 msgid "Don't _reserve space on borders"
 msgstr "_Ekki taka frá pláss á jöðrum"
 
-#: ../panel/panel-preferences-dialog.glade.h:21
+#: ../panel/panel-preferences-dialog.glade.h:22
 msgid ""
 "Select this option if you want maximized windows to cover the area behind "
 "the panel. This only works when the panel is attached to a screen edge."
-msgstr "Veldu þetta ef þú vilt að hámarkaðir gluggar noti svæðið bakvið skjástikuna. Þetta virkar einungis ef skjástikan er fest við skjájaðar."
+msgstr ""
+"Veldu þetta ef þú vilt að hámarkaðir gluggar noti svæðið bakvið skjástikuna."
+" Þetta virkar einungis ef skjástikan er fest við skjájaðar."
 
-#: ../panel/panel-preferences-dialog.glade.h:22
+#: ../panel/panel-preferences-dialog.glade.h:23
 #: ../plugins/actions/actions-dialog.glade.h:6
 #: ../plugins/launcher/launcher-dialog.glade.h:19
 msgid "General"
 msgstr "Almennt"
 
-#: ../panel/panel-preferences-dialog.glade.h:23
+#: ../panel/panel-preferences-dialog.glade.h:24
 msgid "Row _Size (pixels):"
 msgstr "_Stærð raða (mynddílar):"
 
-#: ../panel/panel-preferences-dialog.glade.h:25
+#: ../panel/panel-preferences-dialog.glade.h:26
 #, no-c-format
 msgid "L_ength (%):"
 msgstr "L_engd (%):"
 
-#: ../panel/panel-preferences-dialog.glade.h:26
+#: ../panel/panel-preferences-dialog.glade.h:27
 msgid "Num_ber of rows:"
 msgstr "_Fjöldi raða:"
 
-#: ../panel/panel-preferences-dialog.glade.h:27
+#: ../panel/panel-preferences-dialog.glade.h:28
 msgid "A_utomatically increase the length"
 msgstr "A_uka lengdina sjálfvirkt"
 
-#: ../panel/panel-preferences-dialog.glade.h:28
+#: ../panel/panel-preferences-dialog.glade.h:29
 msgid ""
 "Select this option to automatically increase the length of the panel if the "
 "plugins request more space."
-msgstr "Veldu þennan valkost til að auka sjálfkrafa lengd skjástiku ef viðbætur krefjast þess."
+msgstr ""
+"Veldu þennan valkost til að auka sjálfkrafa lengd skjástiku ef viðbætur "
+"krefjast þess."
 
 #. I18N: name of the section (frame) in the panel preferences where the user
 #. can define the length and size of the panel
-#: ../panel/panel-preferences-dialog.glade.h:30
+#: ../panel/panel-preferences-dialog.glade.h:31
 msgid "Measurements"
 msgstr "Málsetning"
 
-#: ../panel/panel-preferences-dialog.glade.h:31
+#: ../panel/panel-preferences-dialog.glade.h:32
 msgid "D_isplay"
 msgstr "B_irting"
 
-#: ../panel/panel-preferences-dialog.glade.h:32
+#: ../panel/panel-preferences-dialog.glade.h:33
 #: ../plugins/separator/separator-dialog.glade.h:2
 msgid "_Style:"
 msgstr "_Stíll:"
 
-#: ../panel/panel-preferences-dialog.glade.h:33
+#: ../panel/panel-preferences-dialog.glade.h:34
 msgid "_Alpha:"
 msgstr "_Alfa gegnsæi:"
 
-#: ../panel/panel-preferences-dialog.glade.h:34
+#: ../panel/panel-preferences-dialog.glade.h:35
 msgid ""
 "Alpha value of the panel background, with 0 being fully transparent and 100 "
 "fully opaque."
-msgstr "Alfa-gildi fyrir bakgrunn skjástiku, þar sem 0 er alveg gegnsætt og 100 er alveg ógegnsætt."
+msgstr ""
+"Alfa-gildi fyrir bakgrunn skjástiku, þar sem 0 er alveg gegnsætt og 100 er "
+"alveg ógegnsætt."
 
-#: ../panel/panel-preferences-dialog.glade.h:35
+#: ../panel/panel-preferences-dialog.glade.h:36
 msgid "C_olor:"
 msgstr "L_itur:"
 
-#: ../panel/panel-preferences-dialog.glade.h:36
+#: ../panel/panel-preferences-dialog.glade.h:37
 msgid "Pick a Panel Color"
 msgstr "Veldu lit skjástiku"
 
-#: ../panel/panel-preferences-dialog.glade.h:37
+#: ../panel/panel-preferences-dialog.glade.h:38
 msgid "_File:"
 msgstr "_Skrá:"
 
-#: ../panel/panel-preferences-dialog.glade.h:38
+#: ../panel/panel-preferences-dialog.glade.h:39
 msgid "Select A Background Image"
 msgstr "Veldu bakgrunnsmynd"
 
-#: ../panel/panel-preferences-dialog.glade.h:39
+#: ../panel/panel-preferences-dialog.glade.h:40
 msgid "Background"
 msgstr "Bakgrunnur"
 
 #. I18N: label for the enter transparency slider
-#: ../panel/panel-preferences-dialog.glade.h:41
+#: ../panel/panel-preferences-dialog.glade.h:42
 msgid "_Enter:"
 msgstr "_Byrja:"
 
 #. I18N: label for the leave transparency slider
-#: ../panel/panel-preferences-dialog.glade.h:43
+#: ../panel/panel-preferences-dialog.glade.h:44
 msgid "_Leave:"
 msgstr "_Fara:"
 
-#: ../panel/panel-preferences-dialog.glade.h:44
+#: ../panel/panel-preferences-dialog.glade.h:45
 msgid ""
 "Transparency when the pointer is hovering over the panel, with 0 being fully"
 " transparent and 100 fully opaque."
-msgstr "Gegnsæi þegar bendill svífur yfir skjástikunni, þar sem 0 er alveg gegnsætt og 100 er alveg ógegnsætt."
+msgstr ""
+"Gegnsæi þegar bendill svífur yfir skjástikunni, þar sem 0 er alveg gegnsætt "
+"og 100 er alveg ógegnsætt."
 
-#: ../panel/panel-preferences-dialog.glade.h:45
+#: ../panel/panel-preferences-dialog.glade.h:46
 msgid ""
 "Transparency when the pointer is not hovering over the panel, with 0 being "
 "fully transparent and 100 fully opaque."
-msgstr "Gegnsæi þegar bendill er ekki yfir skjástikunni, þar sem 0 er alveg gegnsætt og 100 er alveg ógegnsætt."
+msgstr ""
+"Gegnsæi þegar bendill er ekki yfir skjástikunni, þar sem 0 er alveg gegnsætt"
+" og 100 er alveg ógegnsætt."
 
-#: ../panel/panel-preferences-dialog.glade.h:46
+#: ../panel/panel-preferences-dialog.glade.h:47
 msgid "Opacity"
 msgstr "Ógegnsæi"
 
-#: ../panel/panel-preferences-dialog.glade.h:47
+#: ../panel/panel-preferences-dialog.glade.h:48
 msgid ""
 "Enable compositing in the window manager for opacity settings in the panel."
-msgstr "Virkja skjásamsetningu (compositing) í gluggastjóranum til að fá fram gegnsæisstillingar fyrir skjástikuna."
+msgstr ""
+"Virkja skjásamsetningu (compositing) í gluggastjóranum til að fá fram "
+"gegnsæisstillingar fyrir skjástikuna."
 
-#: ../panel/panel-preferences-dialog.glade.h:48
+#: ../panel/panel-preferences-dialog.glade.h:49
 msgid "Appeara_nce"
 msgstr "Út_lit"
 
-#: ../panel/panel-preferences-dialog.glade.h:49
+#: ../panel/panel-preferences-dialog.glade.h:50
 #: ../plugins/launcher/launcher-dialog.glade.h:13
 msgid "Move currently selected item up by one row"
 msgstr "Færa valið atriði upp um eina röð"
 
-#: ../panel/panel-preferences-dialog.glade.h:50
+#: ../panel/panel-preferences-dialog.glade.h:51
 #: ../plugins/launcher/launcher-dialog.glade.h:14
 msgid "Move currently selected item down by one row"
 msgstr "Færa valið atriði niður um eina röð"
 
-#: ../panel/panel-preferences-dialog.glade.h:51
+#: ../panel/panel-preferences-dialog.glade.h:52
 msgid "Add new item to this panel"
 msgstr "Bæta við nýju atriði við þessa skjástiku"
 
-#: ../panel/panel-preferences-dialog.glade.h:52
+#: ../panel/panel-preferences-dialog.glade.h:53
 msgid "Remove currently selected item"
 msgstr "Fjarlægja valið atriði"
 
-#: ../panel/panel-preferences-dialog.glade.h:53
+#: ../panel/panel-preferences-dialog.glade.h:54
 #: ../plugins/launcher/launcher-dialog.glade.h:18
 msgid "Edit the currently selected item"
 msgstr "Breyta völdu atriði"
 
-#: ../panel/panel-preferences-dialog.glade.h:54
+#: ../panel/panel-preferences-dialog.glade.h:55
 msgid "Show about information of the currently selected item"
 msgstr "Sýna upplýsingar um valið atriði"
 
-#: ../panel/panel-preferences-dialog.glade.h:55
+#: ../panel/panel-preferences-dialog.glade.h:56
 msgid "Ite_ms"
 msgstr "At_riði"
 
@@ -604,7 +639,7 @@ msgstr "Vanur"
 msgid "Expert"
 msgstr "Snillingur"
 
-#: ../panel/panel-window.c:2594
+#: ../panel/panel-window.c:2652
 msgid "_Lock Panel"
 msgstr "Læsa skjástiku"
 
@@ -616,7 +651,9 @@ msgstr "Velkomin/n í fyrstu keyrslu þessara skjástiku"
 msgid ""
 "Because the panel moved to a new system for storing the settings, it has to "
 "load a fresh initial configuration."
-msgstr "Þar sem skjástikan fékk nýtt kerfi til geymslu stillinga, þá þarf að hlaða inn ferskum frumstillingum."
+msgstr ""
+"Þar sem skjástikan fékk nýtt kerfi til geymslu stillinga, þá þarf að hlaða "
+"inn ferskum frumstillingum."
 
 #: ../migrate/main.c:127 ../migrate/main.c:136
 msgid "Choose below which setup you want for the first startup."
@@ -819,12 +856,12 @@ msgstr "Slekk á tölvu eftir %d sekúndur."
 msgid "Separator"
 msgstr "Aðgreinir"
 
-#: ../plugins/actions/actions.c:976
+#: ../plugins/actions/actions.c:983
 #, c-format
 msgid "Failed to run action \"%s\""
 msgstr "Gat ekki keyrt aðgerðina \"%s\""
 
-#: ../plugins/actions/actions.c:1147
+#: ../plugins/actions/actions.c:1154
 msgid "John Doe"
 msgstr "Jón Jónsson"
 
@@ -845,7 +882,9 @@ msgstr "Birta almenn heiti forrita"
 msgid ""
 "Select this option to show the generic application name in the menu, for "
 "example \"File Manager\" instead of \"Thunar\""
-msgstr "Veldu þennan möguleika til að birta almenn heiti forrita í valmynd, til dæmis \"Skráastjóri\" í stað \"Thunar\""
+msgstr ""
+"Veldu þennan möguleika til að birta almenn heiti forrita í valmynd, til "
+"dæmis \"Skráastjóri\" í stað \"Thunar\""
 
 #: ../plugins/applicationsmenu/applicationsmenu-dialog.glade.h:4
 msgid "Show ic_ons in menu"
@@ -908,12 +947,12 @@ msgstr "Valmyndarskrá"
 msgid "Applications"
 msgstr "Forrit"
 
-#: ../plugins/applicationsmenu/applicationsmenu.c:564
+#: ../plugins/applicationsmenu/applicationsmenu.c:565
 #: ../plugins/directorymenu/directorymenu.c:388
 msgid "Select An Icon"
 msgstr "Veldu táknmynd"
 
-#: ../plugins/applicationsmenu/applicationsmenu.c:605
+#: ../plugins/applicationsmenu/applicationsmenu.c:606
 #: ../plugins/clock/clock.c:865 ../plugins/launcher/launcher.c:2308
 #, c-format
 msgid "Failed to execute command \"%s\"."
@@ -974,7 +1013,9 @@ msgstr "Klukka"
 msgid ""
 "Name of a timezone corresponding a file in the zoneinfo database, for "
 "example \"America/New_York\". Leave empty to use the localtime."
-msgstr "Heiti tímabeltis samkvæmt skrá í zoneinfo gagnagrunni; til dæmis \"Ameríka/New_York\". Skildu eftir autt til að nota staðartíma."
+msgstr ""
+"Heiti tímabeltis samkvæmt skrá í zoneinfo gagnagrunni; til dæmis "
+"\"Ameríka/New_York\". Skildu eftir autt til að nota staðartíma."
 
 #: ../plugins/clock/clock-dialog.glade.h:3
 msgid "Time_zone:"
@@ -1003,7 +1044,11 @@ msgid ""
 "example, %Y will be substituted with the year, %m with the month and %d with"
 " the day. Similarly, <b></b> tags will make the text bold. See the \"Help\" "
 "page for additional information."
-msgstr "Sniðið lýsir hlutum dagsetninga og tíma sem settir verða á skjástikuna. Til dæmis verður %Y skipt út fyrir ártal, %m verður mánuður og %d verður dagsetning. Á svipaðan hátt gera <b></b> merki innlagðan texta feitletraðan. Skoðaðu síðuna \"Hjálp\" til að fá vitneskju um meira."
+msgstr ""
+"Sniðið lýsir hlutum dagsetninga og tíma sem settir verða á skjástikuna. Til "
+"dæmis verður %Y skipt út fyrir ártal, %m verður mánuður og %d verður "
+"dagsetning. Á svipaðan hátt gera <b></b> merki innlagðan texta feitletraðan."
+" Skoðaðu síðuna \"Hjálp\" til að fá vitneskju um meira."
 
 #: ../plugins/clock/clock-dialog.glade.h:11
 msgid "Display _seconds"
@@ -1324,16 +1369,16 @@ msgstr "Ekkert sjálfgefið forrit fannst fyrir \"%s\""
 msgid "Failed to launch default application for \"%s\""
 msgstr "Mistókst að keyra sjálfgefið forrit fyrir \"%s\""
 
-#: ../plugins/directorymenu/directorymenu.c:716
+#: ../plugins/directorymenu/directorymenu.c:719
 #, c-format
 msgid "Failed to execute the preferred application for category \"%s\""
 msgstr "Mistókst að keyra valið forrit fyrir flokkinn \"%s\""
 
-#: ../plugins/directorymenu/directorymenu.c:789
+#: ../plugins/directorymenu/directorymenu.c:792
 msgid "Open Folder"
 msgstr "Opna möppu"
 
-#: ../plugins/directorymenu/directorymenu.c:800
+#: ../plugins/directorymenu/directorymenu.c:803
 msgid "Open in Terminal"
 msgstr "Opna í skjáhermi"
 
@@ -1354,7 +1399,10 @@ msgid ""
 "Enter a list of patterns that will be used to determine which files are "
 "visible in a directory. If you specify more than one pattern here, the list "
 "items must be separated with semicolons (e.g. *.txt;*.doc)."
-msgstr "Settu inn lista með þeim mynstrum sem verða notuð til að ákvarða hvaða skrár verði sýnilegar í möppu. Ef þú tiltekur hér fleiri en eitt mynstur, þurfa færslurnar að vera aðgreindar með tvípunktum (t.d. *.txt:*.doc)."
+msgstr ""
+"Settu inn lista með þeim mynstrum sem verða notuð til að ákvarða hvaða skrár"
+" verði sýnilegar í möppu. Ef þú tiltekur hér fleiri en eitt mynstur, þurfa "
+"færslurnar að vera aðgreindar með tvípunktum (t.d. *.txt:*.doc)."
 
 #: ../plugins/directorymenu/directorymenu-dialog.glade.h:7
 msgid "_File Pattern:"
@@ -1468,7 +1516,9 @@ msgstr "_Gera ábendingar óvirkar"
 msgid ""
 "Select this option to disable the tooltips when moving over the panel button"
 " or menu items."
-msgstr "Veldu þennan valkost til að gera ábendingar óvirkar þegar fært er yfir skjástikuhnapp eða valmyndafærslur."
+msgstr ""
+"Veldu þennan valkost til að gera ábendingar óvirkar þegar fært er yfir "
+"skjástikuhnapp eða valmyndafærslur."
 
 #: ../plugins/launcher/launcher-dialog.glade.h:22
 msgid "Show _label instead of icon"
@@ -1480,7 +1530,8 @@ msgstr "Sýna seinast _notaða hlut í skjástiku"
 
 #: ../plugins/launcher/launcher-dialog.glade.h:24
 msgid "Select this option to move the clicked menu item to the panel."
-msgstr "Veldu þennan valkost til að færa ásmelltu valmyndafærsluna á skjástikuna."
+msgstr ""
+"Veldu þennan valkost til að færa ásmelltu valmyndafærsluna á skjástikuna."
 
 #: ../plugins/launcher/launcher-dialog.glade.h:25
 msgid "_Arrow button position:"
@@ -1494,11 +1545,11 @@ msgstr "Nánar"
 msgid "Program launcher with optional menu"
 msgstr "Forritaræsir með mögulegri valmynd"
 
-#: ../plugins/pager/pager.c:368 ../plugins/pager/pager-dialog.glade.h:5
+#: ../plugins/pager/pager.c:396 ../plugins/pager/pager-dialog.glade.h:5
 msgid "Workspace _Settings..."
 msgstr "_Stillingar vinnusvæða..."
 
-#: ../plugins/pager/pager.c:451
+#: ../plugins/pager/pager.c:479
 msgid "Unable to open the workspace settings"
 msgstr "Tókst ekki að opna vinnusvæðastillingar"
 
@@ -1524,7 +1575,8 @@ msgstr "Birta smæ_kkaða mynd"
 msgid ""
 "Show a miniature view of the workspace with rectangles for the visible "
 "windows"
-msgstr "Birta smámynd af vinnusvæðinu með ferningum til að tákna sýnilega glugga"
+msgstr ""
+"Birta smámynd af vinnusvæðinu með ferningum til að tákna sýnilega glugga"
 
 #: ../plugins/pager/pager-dialog.glade.h:7
 msgid "Switch workspaces using the mouse _wheel"
@@ -1585,7 +1637,9 @@ msgstr "Get ekki ræst svæðið þar sem tilkynningatáknmyndir birtast"
 msgid ""
 "Most likely another widget took over the function of a notification area. "
 "This area will be unused."
-msgstr "Líklega tók önnur skjágræja yfir aðgerðir á tilkynningasvæðinu. Þetta svæði verður ónotað."
+msgstr ""
+"Líklega tók önnur skjágræja yfir aðgerðir á tilkynningasvæðinu. Þetta svæði "
+"verður ónotað."
 
 #: ../plugins/systray/systray.c:870
 msgid "The notification area lost selection"
@@ -1714,23 +1768,23 @@ msgstr "Loka glugga"
 msgid "Minimize Window"
 msgstr "Lágmarka glugga"
 
-#: ../plugins/tasklist/tasklist-widget.c:3306
+#: ../plugins/tasklist/tasklist-widget.c:3326
 msgid "Mi_nimize All"
 msgstr "_Lágmarka alla"
 
-#: ../plugins/tasklist/tasklist-widget.c:3315
+#: ../plugins/tasklist/tasklist-widget.c:3335
 msgid "Un_minimize All"
 msgstr "Stæ_kka alla"
 
-#: ../plugins/tasklist/tasklist-widget.c:3321
+#: ../plugins/tasklist/tasklist-widget.c:3341
 msgid "Ma_ximize All"
 msgstr "_Hámarka alla"
 
-#: ../plugins/tasklist/tasklist-widget.c:3330
+#: ../plugins/tasklist/tasklist-widget.c:3350
 msgid "_Unmaximize All"
 msgstr "_Minnka alla"
 
-#: ../plugins/tasklist/tasklist-widget.c:3340
+#: ../plugins/tasklist/tasklist-widget.c:3360
 msgid "_Close All"
 msgstr "Loka _öllu"
 

@@ -9,8 +9,10 @@ non-multiarch panel (load plugins from both /usr/lib/$triplet and /usr/lib).
 Forwarded: not-needed
 ---
  panel/panel-module.c |   11 +++++++++--
- 1 file changed, 9 insertions(+), 2 deletions(-)
+ 1 files changed, 9 insertions(+), 2 deletions(-)
 
+diff --git a/panel/panel-module.c b/panel/panel-module.c
+index ba39320..de4c52e 100644
 --- a/panel/panel-module.c
 +++ b/panel/panel-module.c
 @@ -38,6 +38,12 @@
@@ -26,7 +28,7 @@ Forwarded: not-needed
  
  typedef enum _PanelModuleRunMode PanelModuleRunMode;
  typedef enum _PanelModuleUnique  PanelModuleUnique;
-@@ -310,6 +316,7 @@ panel_module_new_from_desktop_file (cons
+@@ -303,6 +309,7 @@ panel_module_new_from_desktop_file (const gchar *filename,
    const gchar *module_exec;
    const gchar *module_unique;
    gboolean     found;
@@ -34,7 +36,7 @@ Forwarded: not-needed
  
    panel_return_val_if_fail (!exo_str_is_empty (filename), NULL);
    panel_return_val_if_fail (!exo_str_is_empty (name), NULL);
-@@ -350,11 +357,11 @@ panel_module_new_from_desktop_file (cons
+@@ -343,11 +350,11 @@ panel_module_new_from_desktop_file (const gchar *filename,
        path = g_module_build_path (PANEL_PLUGINS_LIB_DIR, module_name);
        found = g_file_test (path, G_FILE_TEST_EXISTS);
  
@@ -48,3 +50,6 @@ Forwarded: not-needed
            found = g_file_test (path, G_FILE_TEST_EXISTS);
          }
  
+-- 
+1.7.6.3
+

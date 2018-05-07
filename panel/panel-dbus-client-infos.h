@@ -7,11 +7,7 @@ G_BEGIN_DECLS
 
 #ifndef _DBUS_GLIB_ASYNC_DATA_FREE
 #define _DBUS_GLIB_ASYNC_DATA_FREE
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-void
+static inline void
 _dbus_glib_async_data_free (gpointer stuff)
 {
 	g_slice_free (DBusGAsyncData, stuff);
@@ -21,11 +17,7 @@ _dbus_glib_async_data_free (gpointer stuff)
 #ifndef DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel
 #define DBUS_GLIB_CLIENT_WRAPPERS_org_xfce_Panel
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 _panel_dbus_client_display_preferences_dialog (DBusGProxy *proxy, const guint IN_active, const char * IN_socket_id, GError **error)
 
 {
@@ -44,11 +36,7 @@ _panel_dbus_client_display_preferences_dialog_async_callback (DBusGProxy *proxy,
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 _panel_dbus_client_display_preferences_dialog_async (DBusGProxy *proxy, const guint IN_active, const char * IN_socket_id, _panel_dbus_client_display_preferences_dialog_reply callback, gpointer userdata)
 
 {
@@ -58,11 +46,7 @@ _panel_dbus_client_display_preferences_dialog_async (DBusGProxy *proxy, const gu
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "DisplayPreferencesDialog", _panel_dbus_client_display_preferences_dialog_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_UINT, IN_active, G_TYPE_STRING, IN_socket_id, G_TYPE_INVALID);
 }
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 _panel_dbus_client_display_items_dialog (DBusGProxy *proxy, const guint IN_active, GError **error)
 
 {
@@ -81,11 +65,7 @@ _panel_dbus_client_display_items_dialog_async_callback (DBusGProxy *proxy, DBusG
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 _panel_dbus_client_display_items_dialog_async (DBusGProxy *proxy, const guint IN_active, _panel_dbus_client_display_items_dialog_reply callback, gpointer userdata)
 
 {
@@ -95,11 +75,7 @@ _panel_dbus_client_display_items_dialog_async (DBusGProxy *proxy, const guint IN
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "DisplayItemsDialog", _panel_dbus_client_display_items_dialog_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_UINT, IN_active, G_TYPE_INVALID);
 }
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 _panel_dbus_client_save (DBusGProxy *proxy, GError **error)
 
 {
@@ -118,11 +94,7 @@ _panel_dbus_client_save_async_callback (DBusGProxy *proxy, DBusGProxyCall *call,
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 _panel_dbus_client_save_async (DBusGProxy *proxy, _panel_dbus_client_save_reply callback, gpointer userdata)
 
 {
@@ -132,11 +104,7 @@ _panel_dbus_client_save_async (DBusGProxy *proxy, _panel_dbus_client_save_reply 
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "Save", _panel_dbus_client_save_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_INVALID);
 }
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 _panel_dbus_client_add_new_item (DBusGProxy *proxy, const char * IN_plugin_name, const char ** IN_arguments, GError **error)
 
 {
@@ -155,11 +123,7 @@ _panel_dbus_client_add_new_item_async_callback (DBusGProxy *proxy, DBusGProxyCal
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 _panel_dbus_client_add_new_item_async (DBusGProxy *proxy, const char * IN_plugin_name, const char ** IN_arguments, _panel_dbus_client_add_new_item_reply callback, gpointer userdata)
 
 {
@@ -169,11 +133,7 @@ _panel_dbus_client_add_new_item_async (DBusGProxy *proxy, const char * IN_plugin
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "AddNewItem", _panel_dbus_client_add_new_item_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_STRING, IN_plugin_name, G_TYPE_STRV, IN_arguments, G_TYPE_INVALID);
 }
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 _panel_dbus_client_plugin_event (DBusGProxy *proxy, const char * IN_plugin_name, const char * IN_name, const GValue* IN_value, gboolean* OUT_succeed, GError **error)
 
 {
@@ -193,11 +153,7 @@ _panel_dbus_client_plugin_event_async_callback (DBusGProxy *proxy, DBusGProxyCal
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 _panel_dbus_client_plugin_event_async (DBusGProxy *proxy, const char * IN_plugin_name, const char * IN_name, const GValue* IN_value, _panel_dbus_client_plugin_event_reply callback, gpointer userdata)
 
 {
@@ -207,11 +163,7 @@ _panel_dbus_client_plugin_event_async (DBusGProxy *proxy, const char * IN_plugin
   stuff->userdata = userdata;
   return dbus_g_proxy_begin_call (proxy, "PluginEvent", _panel_dbus_client_plugin_event_async_callback, stuff, _dbus_glib_async_data_free, G_TYPE_STRING, IN_plugin_name, G_TYPE_STRING, IN_name, G_TYPE_VALUE, IN_value, G_TYPE_INVALID);
 }
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-gboolean
+static inline gboolean
 _panel_dbus_client_terminate (DBusGProxy *proxy, const gboolean IN_restart, GError **error)
 
 {
@@ -230,11 +182,7 @@ _panel_dbus_client_terminate_async_callback (DBusGProxy *proxy, DBusGProxyCall *
   return;
 }
 
-static
-#ifdef G_HAVE_INLINE
-inline
-#endif
-DBusGProxyCall*
+static inline DBusGProxyCall*
 _panel_dbus_client_terminate_async (DBusGProxy *proxy, const gboolean IN_restart, _panel_dbus_client_terminate_reply callback, gpointer userdata)
 
 {

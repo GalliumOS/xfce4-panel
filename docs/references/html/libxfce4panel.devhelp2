@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
 <book xmlns="http://www.devhelp.net/book" title="Libxfce4panel Reference Manual" link="index.html" author="Nick Schermer" name="libxfce4panel" version="2" language="c">
   <chapters>
     <sub name="Fundamentals" link="libxfce4panel-fundamentals.html">
@@ -29,14 +28,14 @@
   </chapters>
   <functions>
     <keyword type="function" name="libxfce4panel_check_version ()" link="libxfce4panel-Version-Information.html#libxfce4panel-check-version" since="4.8"/>
-    <keyword type="macro" name="LIBXFCE4PANEL_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-VERSION:CAPS" since="4.8"/>
-    <keyword type="macro" name="LIBXFCE4PANEL_MAJOR_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-MAJOR-VERSION:CAPS" since="4.8"/>
-    <keyword type="macro" name="LIBXFCE4PANEL_MINOR_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-MINOR-VERSION:CAPS" since="4.8"/>
-    <keyword type="macro" name="LIBXFCE4PANEL_MICRO_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-MICRO-VERSION:CAPS" since="4.8"/>
     <keyword type="macro" name="LIBXFCE4PANEL_CHECK_VERSION()" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-CHECK-VERSION:CAPS" since="4.8"/>
     <keyword type="variable" name="libxfce4panel_major_version" link="libxfce4panel-Version-Information.html#libxfce4panel-major-version" since="4.8"/>
     <keyword type="variable" name="libxfce4panel_minor_version" link="libxfce4panel-Version-Information.html#libxfce4panel-minor-version" since="4.8"/>
     <keyword type="variable" name="libxfce4panel_micro_version" link="libxfce4panel-Version-Information.html#libxfce4panel-micro-version" since="4.8"/>
+    <keyword type="macro" name="LIBXFCE4PANEL_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-VERSION:CAPS" since="4.8"/>
+    <keyword type="macro" name="LIBXFCE4PANEL_MAJOR_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-MAJOR-VERSION:CAPS" since="4.8"/>
+    <keyword type="macro" name="LIBXFCE4PANEL_MINOR_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-MINOR-VERSION:CAPS" since="4.8"/>
+    <keyword type="macro" name="LIBXFCE4PANEL_MICRO_VERSION" link="libxfce4panel-Version-Information.html#LIBXFCE4PANEL-MICRO-VERSION:CAPS" since="4.8"/>
     <keyword type="macro" name="xfce_screen_position_get_orientation()" link="libxfce4panel-Standard-Enumerations.html#xfce-screen-position-get-orientation"/>
     <keyword type="macro" name="xfce_screen_position_is_bottom()" link="libxfce4panel-Standard-Enumerations.html#xfce-screen-position-is-bottom"/>
     <keyword type="macro" name="xfce_screen_position_is_floating()" link="libxfce4panel-Standard-Enumerations.html#xfce-screen-position-is-floating"/>
@@ -45,13 +44,13 @@
     <keyword type="macro" name="xfce_screen_position_is_right()" link="libxfce4panel-Standard-Enumerations.html#xfce-screen-position-is-right"/>
     <keyword type="macro" name="xfce_screen_position_is_top()" link="libxfce4panel-Standard-Enumerations.html#xfce-screen-position-is-top"/>
     <keyword type="enum" name="enum XfceScreenPosition" link="libxfce4panel-Standard-Enumerations.html#XfceScreenPosition"/>
-    <keyword type="macro" name="XFCE_PANEL_CHANNEL_NAME" link="libxfce4panel-Commonly-used-plugin-macros.html#XFCE-PANEL-CHANNEL-NAME:CAPS" since="4.8"/>
     <keyword type="macro" name="panel_slice_alloc()" link="libxfce4panel-Commonly-used-plugin-macros.html#panel-slice-alloc" deprecated=""/>
     <keyword type="macro" name="panel_slice_alloc0()" link="libxfce4panel-Commonly-used-plugin-macros.html#panel-slice-alloc0" deprecated=""/>
     <keyword type="macro" name="panel_slice_free()" link="libxfce4panel-Commonly-used-plugin-macros.html#panel-slice-free" deprecated=""/>
     <keyword type="macro" name="panel_slice_free1()" link="libxfce4panel-Commonly-used-plugin-macros.html#panel-slice-free1" deprecated=""/>
     <keyword type="macro" name="panel_slice_new()" link="libxfce4panel-Commonly-used-plugin-macros.html#panel-slice-new" deprecated=""/>
     <keyword type="macro" name="panel_slice_new0()" link="libxfce4panel-Commonly-used-plugin-macros.html#panel-slice-new0" deprecated=""/>
+    <keyword type="macro" name="XFCE_PANEL_CHANNEL_NAME" link="libxfce4panel-Commonly-used-plugin-macros.html#XFCE-PANEL-CHANNEL-NAME:CAPS" since="4.8"/>
     <keyword type="macro" name="PANEL_PARAM_READABLE" link="libxfce4panel-Commonly-used-plugin-macros.html#PANEL-PARAM-READABLE:CAPS" deprecated=""/>
     <keyword type="macro" name="PANEL_PARAM_READWRITE" link="libxfce4panel-Commonly-used-plugin-macros.html#PANEL-PARAM-READWRITE:CAPS" deprecated=""/>
     <keyword type="macro" name="PANEL_PARAM_WRITABLE" link="libxfce4panel-Commonly-used-plugin-macros.html#PANEL-PARAM-WRITABLE:CAPS" deprecated=""/>
@@ -160,5 +159,32 @@
     <keyword type="macro" name="xfce_allow_panel_customization" link="libxfce4panel-Convenience-Functions.html#xfce-allow-panel-customization" deprecated="4.8: Look at xfce_panel_plugin_get_locked()."/>
     <keyword type="macro" name="xfce_create_panel_button" link="libxfce4panel-Convenience-Functions.html#xfce-create-panel-button" deprecated="4.8: Use xfce_panel_create_button() instead."/>
     <keyword type="macro" name="xfce_create_panel_toggle_button" link="libxfce4panel-Convenience-Functions.html#xfce-create-panel-toggle-button" deprecated="4.8: Use xfce_panel_create_toggle_button() instead."/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_NONE" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-NONE:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_NW_H" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-NW-H:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_N" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-N:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_NE_H" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-NE-H:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_NW_V" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-NW-V:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_W" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-W:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_SW_V" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-SW-V:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_NE_V" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-NE-V:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_E" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-E:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_SE_V" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-SE-V:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_SW_H" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-SW-H:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_S" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-S:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_SE_H" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-SE-H:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_FLOATING_H" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-FLOATING-H:CAPS"/>
+    <keyword type="constant" name="XFCE_SCREEN_POSITION_FLOATING_V" link="libxfce4panel-Standard-Enumerations.html#XFCE-SCREEN-POSITION-FLOATING-V:CAPS"/>
+    <keyword type="member" name="XfcePanelPluginClass.construct" link="XfcePanelPlugin.html#XfcePanelPluginClass.construct"/>
+    <keyword type="member" name="XfcePanelPluginClass.screen-position-changed" link="XfcePanelPlugin.html#XfcePanelPluginClass.screen-position-changed"/>
+    <keyword type="member" name="XfcePanelPluginClass.size-changed" link="XfcePanelPlugin.html#XfcePanelPluginClass.size-changed"/>
+    <keyword type="member" name="XfcePanelPluginClass.orientation-changed" link="XfcePanelPlugin.html#XfcePanelPluginClass.orientation-changed"/>
+    <keyword type="member" name="XfcePanelPluginClass.free-data" link="XfcePanelPlugin.html#XfcePanelPluginClass.free-data"/>
+    <keyword type="member" name="XfcePanelPluginClass.save" link="XfcePanelPlugin.html#XfcePanelPluginClass.save"/>
+    <keyword type="member" name="XfcePanelPluginClass.about" link="XfcePanelPlugin.html#XfcePanelPluginClass.about"/>
+    <keyword type="member" name="XfcePanelPluginClass.configure-plugin" link="XfcePanelPlugin.html#XfcePanelPluginClass.configure-plugin"/>
+    <keyword type="member" name="XfcePanelPluginClass.removed" link="XfcePanelPlugin.html#XfcePanelPluginClass.removed"/>
+    <keyword type="member" name="XfcePanelPluginClass.remote-event" link="XfcePanelPlugin.html#XfcePanelPluginClass.remote-event"/>
+    <keyword type="member" name="XfcePanelPluginClass.mode-changed" link="XfcePanelPlugin.html#XfcePanelPluginClass.mode-changed"/>
+    <keyword type="member" name="XfcePanelPluginClass.nrows-changed" link="XfcePanelPlugin.html#XfcePanelPluginClass.nrows-changed"/>
   </functions>
 </book>

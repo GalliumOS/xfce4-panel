@@ -18,9 +18,9 @@ m4_define([libxfce4panel_version_api], [1.0])
 m4_define([xfce4_panel_config_version], [2])
 m4_define([xfce4_panel_version_major], [4])
 m4_define([xfce4_panel_version_minor], [12])
-m4_define([xfce4_panel_version_micro], [0])
+m4_define([xfce4_panel_version_micro], [2])
 m4_define([xfce4_panel_version_nano],  []) dnl leave this empty to have no nano version
-m4_define([xfce4_panel_version_build], [979d0af])
+m4_define([xfce4_panel_version_build], [738d1cf3])
 m4_define([xfce4_panel_version_tag],   [])
 m4_define([xfce4_panel_version], [xfce4_panel_version_major().xfce4_panel_version_minor().xfce4_panel_version_micro()ifelse(xfce4_panel_version_nano(), [], [], [.xfce4_panel_version_nano()])ifelse(xfce4_panel_version_tag(), [git], [xfce4_panel_version_tag()-xfce4_panel_version_build()], [xfce4_panel_version_tag()])])
 
